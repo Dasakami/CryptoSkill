@@ -1,5 +1,3 @@
-// src/components/ProfileTab.tsx
-
 import React from 'react';
 import { Award, Clock, CheckCircle } from 'lucide-react';
 import { Verification } from '../types';

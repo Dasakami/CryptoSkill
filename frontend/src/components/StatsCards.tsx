@@ -1,5 +1,3 @@
-// src/components/StatsCards.tsx
-
 import React from 'react';
 import { Award, TrendingUp, CheckCircle } from 'lucide-react';
 import { UserProfile, Verification } from '../types';

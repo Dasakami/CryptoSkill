@@ -1,18 +1,14 @@
-// src/services/api.ts
-
 import { Skill, Verification, UserProfile, ProofData } from '../types';
 
 const API_BASE = process.env.REACT_APP_API_URL || 'http://localhost:8000/api';
 
 export const api = {
-  // Skills
   async getSkills(): Promise<Skill[]> {
     const response = await fetch(`${API_BASE}/skills/`);
     const data = await response.json();
     return data.results || data;
   },
 
-  // Verifications
   async getVerifications(userAddress?: string): Promise<Verification[]> {
     const url = userAddress 
       ? `${API_BASE}/verifications/?user_address=${userAddress}`
@@ -47,7 +43,6 @@ export const api = {
     return response.json();
   },
 
-  // User Profile
   async getUserProfile(walletAddress: string): Promise<UserProfile | null> {
     try {
       const response = await fetch(`${API_BASE}/profiles/${walletAddress}/`);

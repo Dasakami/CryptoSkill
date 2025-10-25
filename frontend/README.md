@@ -9,14 +9,9 @@ Modern React TypeScript application with Tailwind CSS for decentralized skills v
 ### Local Development
 
 ```bash
-# Install dependencies
 npm install
 
-# Setup environment
 cp .env.example .env
-# Edit REACT_APP_API_URL if needed
-
-# Start development server
 npm start
 ```
 
@@ -25,10 +20,8 @@ Access at: `http://localhost:3000`
 ### Docker
 
 ```bash
-# Build image
 docker build -t cryptoskill-frontend .
 
-# Run container
 docker run -p 3000:80 cryptoskill-frontend
 ```
 
@@ -92,13 +85,10 @@ Located in `src/services/api.ts`:
 ```typescript
 import { api } from './services/api';
 
-// Get all skills
 const skills = await api.getSkills();
 
-// Submit verification
 await api.submitVerification(address, skillId, proofData);
 
-// Get user profile
 const profile = await api.getUserProfile(address);
 ```
 
@@ -122,13 +112,10 @@ REACT_APP_CONTRACT_ADDRESS=0x...
 ## 🧪 Testing
 
 ```bash
-# Run tests
 npm test
 
-# Build for production
 npm run build
 
-# Lint
 npm run lint
 ```
 

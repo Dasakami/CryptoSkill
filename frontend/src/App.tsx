@@ -1,5 +1,3 @@
-// src/App.tsx
-
 import React, { useState, useEffect } from 'react';
 import { Award } from 'lucide-react';
 import { Header } from './components/Header';

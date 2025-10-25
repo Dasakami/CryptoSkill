@@ -1,5 +1,3 @@
-// src/hooks/useWallet.ts
-
 import { useState, useEffect } from 'react';
 
 declare global {

@@ -1,5 +1,3 @@
-// src/components/ProofForm.tsx
-
 import React from 'react';
 import { Award } from 'lucide-react';
 import { ProofData } from '../types';

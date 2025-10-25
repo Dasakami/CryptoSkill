@@ -1,5 +1,3 @@
-// src/utils/helpers.ts
-
 export const getCategoryColor = (category: string): string => {
   const colors: Record<string, string> = {
     programming: 'bg-blue-100 text-blue-800',
